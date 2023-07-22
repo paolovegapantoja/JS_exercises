@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffc700;
+}
+
+header{
+    padding: 20px 70px;
+    background-color: transparent;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    border: 2px solid;
+    border-radius: 20px;
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 1s;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+ */
+}
+
+a #lupa:hover{
+    color: rgb(80, 76, 76);
+    background-color: #ffc700;
+    border: none;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+#btn:hover{
+    opacity: 50%;
+}
+
+nav button{
+    background:transparent;
+    border: none;
+    color: black;
+}
+
+nav button #lupa{
+    color: black;
+    font-weight: bold
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.opt_2{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.opt_2 select{
+    background-color: #ffc700;
+    border: 2px solid;
+    border-radius: 20px;
+    outline: none;
+    font-weight: bold;
+    padding: 10px 40px 10px 20px;
+    transition: background-color 1s;
+}
+
+.opt_2 select:hover{
+    background-color: black;
+    color: #ffc700;
+    color: white;
+    border-color: black;
+}
+
+#paises:hover{
+    color: black;
+    background-color: #ffc700;
+}
+
+#paises:active, #paises:focus{
+    background-color: black;
+    color: #ffc700;
+    color: white;
+    border-color: black;    
+}
+
+/* main{
+    height: 60vh;
+} */
+
+main #carrusel{
+    display: flex;
+    overflow-x: scroll;
+    border-bottom: 4px solid black;
+}
+
+main #carrusel::-webkit-scrollbar{
+    display: none;
+}
+
+main #carrusel .img{
+    width: 500px;
+    flex: 1 0 auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+main #carrusel .ima{
+    height: 500px;
+    flex: 1 0 auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+main #carrusel .img6{
+    position: absolute;
+    top: 500px;
+    right: 80px;
+}
+
+main #info{
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+    height: 170px;
+    padding-top: 40px;
+}
+
+main span{
+    text-decoration: underline;
+}
+
+main p:hover{
+    color: gray;
+}
+
+.containerIMG{
+    position: relative;
+    /* width: 15pc; */
+    border: 5px solid transparent;
+    height: 25pc;
+    border-radius: 40px;
+}
+
+.containerIMG img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 35px;
+    height: 100%;
+}
+
+.camisa{
+    transition: all 0.5s ease-in-out;
+}
+
+.containerIMG:hover .product{
+    opacity: 0;
+}
+.containerIMG:hover{
+    border: 5px solid black;
+}
+
+
+.containerIMG_2{
+    position: relative;
+    width: 30pc;
+    border: 5px solid transparent;
+    height: 33pc;
+    border-radius: 40px;
+}
+
+.containerIMG_2 img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 35px;
+    height: 100%;
+}
+
+.camisa{
+    transition: all 0.5s ease-in-out;
+}
+
+.containerIMG_2:hover .product{
+    opacity: 0;
+}
+.containerIMG_2:hover{
+    border: 5px solid black;
+}
+
+#products{
+    padding: 100px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 30px;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 60px; */
+    /* justify-content: space-around; */
+    background-color: white;
+}
+
+.cont_prod:nth-child(9){
+    grid-column: 1/4;
+    grid-row: 3/3;
+    width: 100%;
+    height: 100%;
+}
+
+/* .containerIMG:nth-child(1){
+    grid-column: 3/5;
+    grid-row: 2/4;
+    width: 100%;
+    height: 100%;
+} */
+
+.infor{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 23px;    
+}
+
+#products span{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#products p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+}
+
+.pie{
+    background-color: rgb(15, 169, 88);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pie_dos{
+    background-color: rgb(15, 169, 88);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px 90px;
+}
+
+.pie ul{
+    list-style: none;
+    text-align: left;
+}
+
+/* .pie:nth-child(4){
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+}
+
+.piescroll:nth-child(5){
+    grid-column: 3/3;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+} */
+
+.piesocial ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.marquesina{
+    background-color: rgb(15, 169, 88);
+}
+
+.marquesina img{
+    height: 20px;
+}
+
+.pie a{
+    outline: none;
+    text-decoration: none;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.pie a:visited{
+    color: black;
+}
+
+.pie a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.pieterms p{
+    text-align: left;    
+}
+
+.piescroll img{
+    position: absolute;
+}
+
+.piescroll:hover .black{
+    opacity: 0;
+}
