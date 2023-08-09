@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.bx{
+    font-size: 1.5pc;
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px 50px 50px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.info{
+    display: flex;
+    font-size: small;
+    padding-left: 850px;
+    padding-top: 100px;
+}
+
+.precio{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.info h1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.info p{
+    color: #888888;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+.info .browse{
+    display: flex;
+    width: 22em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info .browse button{
+    background-color: #AEA260;
+    font-size: medium;
+    text-align: center;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 120px;
+    height: 30px;
+}
+
+.info .browse p{
+    font-size: 15px;
+}
+
+.imagen{
+    position: absolute;
+    top:80px;
+    left: 150px;
+}
+
+.redes{
+    padding: 30px 50px 50px 90px;
+}
+
+.circulo{
+    position: absolute;
+    border: #5D5F37 40px solid;
+    border-radius: 50%;
+    height: 800px;
+    width: 60%;
+    top: -70px;
+    left: -400px;
+}
+
+.circulo_blanco{
+    position: absolute;
+    background-color: white;
+    border-radius: 55%;
+    height: 700px;
+    width: 50%;
+    top: -15px;
+    left: -350px;
+    z-index: -1;
+}
+
+#paises{
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+}
